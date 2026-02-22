@@ -32,7 +32,7 @@ Backend runs on `http://127.0.0.1:5000` — Frontend on `http://localhost:5173`.
 ## Project Structure
 
 ```
-clearspend/
+Clarity/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py          # App factory
@@ -167,7 +167,7 @@ All 18 tests should pass. Tests cover:
 
 ## Future Improvements
 
-If this system needed to grow, the next steps in order of priority would be:
+If this system needed to grow, the next steps would be:
 
 1. **Auth** — JWT tokens, user ownership of categories and transactions
 2. **Pagination** — `limit`/`offset` on the transactions endpoint
