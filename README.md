@@ -1,4 +1,4 @@
-# ClearSpend — Expense Tracker
+# Clarity - Know Your Spends
 
 A minimal, well-structured expense tracking application built with Flask, React, and SQLite.
 
