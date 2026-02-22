@@ -10,6 +10,8 @@ def create_app():
     CORS(app)
     db.init_app(app)
     migrate.init_app(app, db)
+    with app.app_context():
+        db.create_all()
 
     from app.routes.categories import categories_bp
     from app.routes.transactions import transactions_bp
