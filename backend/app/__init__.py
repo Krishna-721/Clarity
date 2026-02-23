@@ -2,6 +2,8 @@ from flask import Flask
 from flask_cors import CORS
 from app.config import Config
 from app.extensions import db, migrate
+from app.models.category import Category
+from app.models.transaction import Transaction
 
 def create_app():
     app = Flask(__name__)
@@ -10,6 +12,7 @@ def create_app():
     CORS(app)
     db.init_app(app)
     migrate.init_app(app, db)
+
     with app.app_context():
         db.create_all()
 
